@@ -1,0 +1,9 @@
+docker run -dit \ 
+  --name autoupjdcookie \ 
+  --restart always \ 
+  --hostname autoupjdcookie \ 
+  -p 5188:5188 \ 
+  -e CHROME_PATH=/root/autoupjdcookie/chrome \ 
+  -e DOWNLOAD_PATH=/root/autoupjdcookie/download \ 
+  -v /root/autoupjdcookie:/root/autoupjdcookie \ 
+  redlou/autoupjdcookie:latest
